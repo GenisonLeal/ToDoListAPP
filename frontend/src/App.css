@@ -1,0 +1,156 @@
+/* Reset e estilos globais */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #c4e5fc;
+  color: black;
+}
+
+/* Container principal da aplicação */
+.app-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 15px;
+}
+
+.app-logo {
+  height: 120px; 
+  pointer-events: none;
+}
+
+/* Formulário de tarefas */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+  outline: none;
+  border-color: #0994dc;
+}
+
+.task-form button {
+  padding: 12px 20px;
+  background-color: #0994dc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.task-form button:hover {
+  background-color: #02527a;
+}
+
+/* Lista de tarefas */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item individual da tarefa */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.task-item.completed {
+  background-color: #e2f0d9;
+  text-decoration: line-through;
+  color: black;
+}
+
+.task-item-content {
+  flex-grow: 1;
+}
+
+.task-item-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.task-item-content p {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.task-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-item-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+
+.task-item-actions button:hover {
+  opacity: 0.8;
+}
+
+.toggle-btn {
+  background-color: #13a14f;
+  color: white;
+}
+
+.task-item.completed .toggle-btn {
+    background-color: #f39c12;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Mensagem de erro ou carregamento */
+.message {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    padding: 20px;
+}
