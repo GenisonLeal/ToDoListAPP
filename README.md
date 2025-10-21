@@ -1,129 +1,103 @@
-To-Do List App ✅
+# Projeto To-Do List
 
-Este projeto é uma aplicação web Full-Stack para gestão de tarefas, construída para demonstrar um fluxo completo de desenvolvimento, desde a base de dados até à interface do utilizador.
+![Status do Projeto: Concluído](https://img.shields.io/badge/status-concluído-brightgreen?style=for-the-badge)
 
-![Imagem da Aplicação]
-(Aqui pode adicionar um screenshot da sua aplicação em funcionamento!)
+Uma aplicação Web Full-Stack para gestão de tarefas, desenvolvida com React, Node.js e MySQL. Este projeto demonstra a implementação completa de um sistema com operações CRUD (Create, Read, Update, Delete) e uma API RESTful.
 
-📋 Índice
+<br>
 
-Funcionalidades
+<div align="center">
+  <em><img width="1914" height="955" alt="Demonstração da Aplicação" src="https://github.com/user-attachments/assets/cd28e4f2-43b5-4a6b-bd59-eef3b9ca446a" />
+</em>
+  <br>
+  <br>
+</div>
 
-Tecnologias Utilizadas
+---
 
-Como Executar o Projeto
+### Sobre o Projeto
 
-Autor
+Este projeto foi criado como uma solução simples para a gestão de tarefas diárias. O seu principal objetivo é servir como uma peça de portfólio, demonstrando competências essenciais em desenvolvimento de software, incluindo:
 
-✨ Funcionalidades
+* **Desenvolvimento Front-end:** Construção de uma interface de utilizador reativa e intuitiva com React.
+* **Desenvolvimento Back-end:** Criação de uma API RESTful robusta com Node.js e Express para gerir a lógica de negócio.
+* **Gestão de Base de Dados:** Integração com uma base de dados relacional (MySQL) para a persistência e manipulação de dados.
+* **Comunicação Full-Stack:** Implementação da comunicação assíncrona entre o cliente e o servidor.
 
-✅ Criação de Tarefas: Formulário funcional para adicionar novas tarefas com título e descrição.
+### Funcionalidades Principais
 
-✅ Listagem de Tarefas: Visualização de todas as tarefas existentes de forma clara.
+* **Gestão de Tarefas:** Adicione, edite, visualize e apague tarefas.
+* **Controle de Estado:** Marque tarefas como "pendentes" ou "concluídas" com um único clique.
+* **Persistência de Dados:** As tarefas são guardadas de forma segura numa base de dados MySQL.
+* **Interface Limpa:** Design minimalista e focado na experiência do utilizador.
 
-✅ Atualização de Status: Alterne facilmente o estado de uma tarefa entre "pendente" e "concluída".
+---
 
-✅ Exclusão de Tarefas: Remova tarefas que já não são necessárias.
+### 🛠️ Tech Stack
 
-✅ Validação de Dados: O back-end garante que o título da tarefa não pode ser vazio.
+| Categoria      | Tecnologia                                                                                             |
+| -------------- | ------------------------------------------------------------------------------------------------------ |
+| **Front-End** | `React.js`, `Axios`, `CSS3`                                                                            |
+| **Back-End** | `Node.js`, `Express.js`, `CORS`, `Dotenv`                                                              |
+| **Base de Dados** | `MySQL` (com o driver `mysql2`)                                                                             |
 
-✅ Design Responsivo: A interface adapta-se para uma boa visualização em desktops e dispositivos móveis.
+---
 
-🛠️ Tecnologias Utilizadas
+### 🚀 Começar
 
-A aplicação foi construída com as seguintes tecnologias:
+Para executar este projeto localmente, siga os passos abaixo.
 
-Front-end
+#### **Pré-requisitos**
 
-React: Biblioteca para criar interfaces de utilizador interativas.
+* **Node.js** (v14 ou superior)
+* **MySQL** (servidor local a correr)
+* **Git**
 
-Axios: Cliente HTTP para comunicar com a API.
+#### **Guia de Instalação**
 
-HTML5 & CSS3: Para a estrutura e estilização da aplicação.
+1.  **Clone o repositório para a sua máquina local:**
+    ```sh
+    git clone [https://github.com/GenisonLeal/ToDoListAPP.git](https://github.com/GenisonLeal/ToDoListAPP.git)
+    cd ToDoListAPP
+    ```
 
-Back-end
+2.  **Configure e inicie o Back-end:**
+    * Navegue para a pasta `backend` e instale as dependências:
+        ```sh
+        cd backend
+        npm install
+        ```
+    * Crie o seu ficheiro de ambiente a partir do exemplo:
+        ```sh
+        cp .env.example .env
+        ```
+    * **Edite o ficheiro `.env`** com as suas credenciais do MySQL.
+    * Execute o script `database_setup.sql` no seu cliente MySQL para criar a base de dados.
+    * Inicie o servidor:
+        ```sh
+        npm start
+        ```
+    *O back-end estará disponível em `http://localhost:3001`.*
 
-Node.js: Ambiente de execução para o JavaScript no servidor.
+3.  **Configure e inicie o Front-end:**
+    * Abra **um novo terminal** na raiz do projeto.
+    * Navegue para a pasta `frontend` e instale as dependências:
+        ```sh
+        cd frontend
+        npm install
+        ```
+    * Inicie a aplicação cliente:
+        ```sh
+        npm start
+        ```
+    *O front-end estará disponível em `http://localhost:3000`.*
 
-Express.js: Framework para a construção da API RESTful.
+---
 
-mysql2: Driver de conexão com a base de dados MySQL.
+### Autor
 
-CORS: Middleware para permitir requisições entre o front-end e o back-end.
+**Genison Leal**
 
-Dotenv: Para gestão das variáveis de ambiente.
-
-Base de Dados
-
-MySQL: Sistema de gestão de base de dados relacional para a persistência dos dados.
-
-🚀 Como Executar o Projeto
-
-Siga os passos abaixo para executar a aplicação localmente.
-
-Pré-requisitos
-
-Antes de começar, certifique-se que tem as seguintes ferramentas instaladas:
-
-Node.js (versão 14 ou superior)
-
-MySQL
-
-Instalação
-
-Clone o repositório:
-
-git clone [https://github.com/GenisonLeal/ToDoListAPP.git](https://github.com/GenisonLeal/ToDoListAPP.git)
-cd ToDoListAPP
-
-
-Configuração do Back-end:
-a. Navegue para a pasta do servidor:
-
-cd backend
-
-
-b. Instale as dependências:
-
-npm install
-
-
-c. Crie o ficheiro .env a partir do exemplo e preencha com as suas credenciais do MySQL:
-
-cp .env.example .env
-
-
-d. Execute o script database_setup.sql no seu cliente MySQL para criar a estrutura da base de dados.
-
-e. Inicie o servidor:
-
-npm start
-
-
-O servidor estará a correr em http://localhost:3001.
-
-Configuração do Front-end:
-a. Abra um novo terminal e navegue para a pasta do cliente:
-
-cd frontend
-
-
-b. Instale as dependências:
-
-npm install
-
-
-c. Inicie a aplicação React:
-
-npm start
-
-
-A aplicação estará disponível em http://localhost:3000.
-
-👨‍💻 Autor
-
-Feito por Genison Leal.
-
-GitHub: @GenisonLeal
-
-LinkedIn: [Seu LinkedIn Aqui]
+* **GitHub:** [@GenisonLeal](https://github.com/GenisonLeal)
+* **LinkedIn:** [@GenisonLeal](https://www.linkedin.com/in/genisonleal)
+```eof
